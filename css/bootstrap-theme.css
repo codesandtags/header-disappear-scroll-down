@@ -1,0 +1,30 @@
+body {
+    padding-top: 80px;
+    min-height: 1000px;
+}
+
+.navbar{
+    min-height: 80px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+a.navbar-brand {
+    font-size:30px;
+    padding-top: 28px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    min-height: 79px;
+}
+
+.container-first{
+    background: url("../img/travel.jpg") no-repeat;
+    min-height: 830px;
+    border-bottom: 8px solid #aaa;
+}
+
+.container-second{
+    background: url("../img/bogota.jpg") no-repeat;
+    min-height: 830px;
+    color:#f7f7f7;
+}
