@@ -1,17 +1,16 @@
-var lastScrollTop = 0;
+var lastPositionScrollTop = 0;
 
+/***
+ * Appear and disappear the header depends the
+ * position of the Scroll
+ */
 $(window).scroll(function () {
-    var st = $(this).scrollTop();
-    console.log(" => " + st + " : " + lastScrollTop);
-    if (st < lastScrollTop){
+    var position = $(this).scrollTop();
+    if (position < lastPositionScrollTop){
         $('.navbar ').fadeIn("slow");
     } else {
         $('.navbar ').fadeOut("slow");
     }
-    lastScrollTop = st;
+    lastPositionScrollTop = position;
 });
 
-$("h1").click(function(){
-    console.log(" => ", this);
-    $(this).fadeOut("slow");
-});
